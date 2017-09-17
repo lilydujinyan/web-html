@@ -1,0 +1,224 @@
+html ,body ,ul ,h1 ,h2 ,h3 ,h4 ,.wrapper {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fdfcf8;
+	font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+	font-size: 14px;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.wrapper {
+	width: 1210px;
+	margin: 0 auto;
+}
+.header ,.content ,.footer {
+	width: 1210px;
+	margin: 0 auto;
+}
+.header a {
+	display: block;
+}
+.header a .logo {
+	width: 278px;
+	height: 110px;
+	background-image: url("../image/bg.png");
+	background-position: -3px -140px;
+}
+.header a .logo:hover {
+	background-image: url("../image/bg.png");
+	background-position: -3px -240px;
+}
+.header .nav {
+	background-color: #E8E7E3;
+}
+.header .nav li ,.left ,.middle ,.right {
+	float: left;
+}
+.header .nav li a{
+	color: #8e8e8e;
+	display: block;
+	font-size: 18px;
+	padding: 13px 30px;
+}
+.header .nav li a:hover{
+	background-color: #3f3f3f;
+	color: #fff;
+}
+.header .nav #nav_style {
+	background-color: black;
+	color: #fff;
+}
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.content {
+	width: 1210px;
+	/*height: 2438px;*/
+	margin-top: 20px;
+}
+.left ,.right {
+	border-left: 1px solid #E8E7E3;
+	border-right: 1px solid #E8E7E3;
+	width: 178px;
+	/*height: 2438px;*/
+}
+.middle {
+	width: 808px;
+	/*height: 2438px;*/
+	margin: 0 15px 0 25px;
+}
+.left h2 ,.right h2 {
+	text-align: center;
+	background-color: #E8E7E3;
+	font-weight: 300;
+	color: #9e9e9e;
+	padding: 5px 0;
+	font-size: 19px;
+	margin-bottom: 8px;
+}
+.left h4 {
+    font-size: 14px;
+    padding: 10px 0 5px 10px;
+    color: #000;
+    display: block;
+    font-family: "微软雅黑";
+}
+.left #link_about ,.left #link_help{
+	color: #0479A7;
+	font-size: 12px;
+	text-decoration: none;
+}
+.left #link_help{
+	margin-top: 10px;
+}
+.content .left ul li a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 200;
+	display: block;
+	padding: 4px 0 4px 15px;
+    font-size: 12px;
+}
+.content .left ul li a:hover {
+	background-color: red;
+}
+.right {
+	text-align: center;
+}
+.right .book {
+	display: block;
+	width: 126px;
+	height: 64px;
+	margin: 20px auto;
+	border-radius: 3px;
+	text-align: center;
+	background-repeat: no-repeat;
+	line-height: 64px;
+	color: #fff;
+}
+.consult {
+	background-image: url(../image/bg.png);
+	background-position: -3px -400px;
+}
+.right .lab {
+	background-image: url(../image/bg.png);
+	background-position: -153px -400px;
+}
+.right .text {
+	background-image: url(../image/bg.png);
+	background-position: -300px -400px;
+}
+.right h2 #ad {
+	margin-top: 200px;
+	margin-bottom: 100px;
+	background-color: red;
+}
+.middle .area h1 {
+	font-weight: 400;
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+.middle .area button {
+	width: 100px;
+	height: 30px;
+	background-color: #f0f0f0;
+	border: 1px solid #9e9e9e;
+	margin-right: 15px;
+}
+.middle .cut {
+	border-top: 1px solid #8d8d8d;
+	margin: 35px 0;
+}
+.middle span {
+	color: #ff9955;
+}
+.middle p strong {
+	font-family: "微软雅黑";
+	font-size: 18px;
+	/*font-weight: 800;*/
+	color: rgb(63,63,63);
+}
+.middle h2 {
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #3f3f3f;
+}
+.middle h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.middle .example {
+    margin: 15px 0 0 0;
+    padding: 20px;
+    border: 0;
+    border: 1px dotted #785;
+    background: #f5f5f5;
+    line-height: 1.4;
+    font-family: "Consolas";
+}
+.middle .submit{
+    background-color: rgb(233, 104, 107);
+    border-radius: 2px;
+    font-family: "微软雅黑";
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height:30px;
+    margin-bottom: 20px;
+}
+.middle .submit a {
+	color: rgb(255, 255, 255);
+	font-weight: 300;
+}
+.middle .note span {
+	font-weight: bold;
+	color: #000;
+}
+.footer {
+	color: #777;
+}
+.footer .top {
+	padding: 10px 0px 10px 0px;
+    font-size: 12px;
+    text-align: center;
+    background: transparent url(../image/alert.png) no-repeat;
+    background-position: 280px 7px;
+   	background-color: #E8E7E3;
+}
+.footer .bottom {
+    margin: 30px 0 30px 0;
+    font-size: 14px;
+    text-align: center;
+}
+.footer .bottom a {
+	color: #777;
+}
