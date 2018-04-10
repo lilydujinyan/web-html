@@ -1,0 +1,269 @@
+html, body, ul, h1, p {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	font-size: 62.5%;
+	background: #eee;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+.ask-box {
+	position: relative;
+	padding: 1.5rem 1.5rem 1.2rem 3.8rem;
+}
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.operation {
+	/*width: 100%;*/
+	background: #fff;
+	border-top: 1px solid #eee;
+}
+.operation .ops {
+	padding: 1.5rem 1.5rem 2.2rem 1.5rem;
+}
+.ops h1, .top h1 {
+	font-family: "PingFangSC-Medium";
+	font-size: 1.6rem;
+	color: #666;
+	line-height: 1.6rem;
+}
+.ops .symptom {
+	margin: 1.8rem 0 1.3rem 0;
+	font-family: "PingFangSC-Light";
+	font-size: 1.3rem;
+	color: #999;
+	letter-spacing: -0.05rem;
+	line-height: 2.0rem;
+}
+.ops a  {
+	/*width: 32%;*/
+	width: 24%;
+	display: inline-block;
+	border-left: 0.1rem solid #f4f4f4;
+	height: 1.9rem;
+	font-family: "PingFangSC-Light";
+	font-size: 14px;
+	color: #666;
+	line-height: 1.9rem; 
+ 	text-align: center;
+ 	float: left;
+}
+.ops a.special {
+	border-right: 0.1rem solid #f4f4f4;
+}
+.consult {
+	background: #fff;
+	margin-top: 1rem;
+}
+.top {
+	padding: 1.5rem 1.5rem 0 1.5rem;
+	/*margin-bottom: 1.8rem*/
+	margin-bottom: 0.3rem;
+}
+/*.consult-child .top {
+	margin-bottom: 1.8rem;
+}
+*/
+.top .right .more {
+	font-family: "PingFangSC-Light";
+	font-size: 1.3rem;
+	color: #999;
+	line-height: 1.3rem;
+	margin-right: 0.5rem;
+}
+.next-btn {
+	width: 0.7rem;
+	height: 1.2rem;
+	background: url("../images/Group 5@2x.png") no-repeat;
+	background-size: cover;
+}
+.consult .bottom {
+	/*position: relative;
+	padding: 1.5rem 1.5rem 1.2rem 3.8rem;*/
+	/*border-bottom: 0.1rem solid #f4f4f4;*/
+}
+.bottom .bottom-img {
+	position: absolute;
+	/*top: 0.5rem;*/
+	top: 2rem;
+	left: 1.5rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	background: url("../images/Group 2@2x.png");
+	background-size: cover;
+}
+.bottom .bottom-title {
+	font-family: "PingFangSC-Light";
+	font-size: 1.3rem;
+	color: #323232;
+	letter-spacing: -0.03rem;
+	line-height: 2.0rem;
+	text-align: justify;
+}
+.bottom-title span {
+	color: #FF6134;
+}
+.cut {
+	height: 0.1rem;
+	background: #f4f4f4;
+	margin-left: 1.5rem;
+}
+.recommend {
+	background: #fff;
+	margin-top: 1rem;
+}
+.mb {
+	margin-bottom: 2rem;
+}
+.recommend .introduction {
+	position: relative;
+	padding: 1.7rem 1.5rem 1.1rem 8.5rem;
+}
+.introduction .people-img {
+	position: absolute;
+	left: 1.5rem;
+	width: 6rem;
+	height: 6rem;
+	/*background: red;*/
+	border-radius: 100%;
+}
+.people-img img {
+	width: 6rem;
+	height: 6rem;
+}
+.synopsis .doctor {
+	margin-bottom: 0.3rem;
+}
+.doctor .username {
+	display: inline-block;
+	font-family: "PingFangSC-Medium";
+	font-size: 1.6rem;
+	color: #323232;
+	letter-spacing: -0.039rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+}
+.doctor .job {
+	display: inline-block;
+	font-family: "PingFangSC-Light";
+	font-size: 1.3rem;
+	color: #666;
+	letter-spacing: -0.031rem;
+	margin-left: 1rem;
+}
+.synopsis .hospital {
+	margin-bottom: 0.4rem;
+	font-family: "PingFangSC-Light";
+	font-size: 1.3rem;
+	color: #666;
+	letter-spacing: -0.031rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
+}
+.synopsis .good {
+	font-family: "PingFangSC-Light";
+	font-size: 1.3rem;
+	color: #999;
+	letter-spacing: -0.041rem;
+	text-align: justify;
+	line-height: 1.6rem
+}
+.synopsis .rule {
+	height: 0.1rem;
+	background: #f4f4f4;
+	margin: 0.8rem -1.5rem 0.8rem 0;
+} 
+.synopsis .buy {
+	font-family: "PingFangSC-Light";
+	font-size: 1.3rem;
+	color: #666;
+	letter-spacing: -0.031rem;
+}
+.synopsis .buy span {
+	color: #FF6134;
+}
+.Encyclopedia {
+	background: #fff;
+	padding: 1.4rem 1.5rem 0 1.5rem;
+	margin-top: 1rem;
+}
+.Encyclopedia .top {
+	padding: 0;
+}
+.healthy-item {
+	padding: 1.5rem 0;
+}
+.healthy-item span {
+	display: inline-block;
+	font-family: "PingFangSC-Light";
+	font-size: 1.5rem;
+	color: #000;
+	line-height: 1.6rem;
+}
+.ad {
+	font-family: "PingFangSC-Regular";
+	font-size: 0.9rem;
+	color: #FFF;
+	letter-spacing: 0;
+	line-height: 0.9rem;
+	padding: 0.2rem;
+	background: #e0e0e0;
+	margin-right: 0.9rem;
+}
+.correlation {
+	margin-top: 1rem;
+	background: #fff;
+	/*padding: 0 1.5rem 0 1.5rem;*/
+	margin-bottom: -0.3rem;
+}
+.interfix {
+	/*margin-top: -0.1rem;*/
+	position: relative;
+	background: #fff;
+	padding: 2rem 1.5rem 2rem 10rem;
+}
+.change {
+	padding: 3.6rem 1.5rem 2rem 10rem;
+}
+.interfix-img {
+	position: absolute;
+	left: 1.5rem;
+	width: 7.5rem;
+	height: 7.5rem;
+	/*background: #eee;*/
+}
+.interfix-img img {
+	width: 7.5rem;
+	height: 7.5rem;
+}
+.r-top {
+	font-family: "PingFangSC-Regular";
+	font-size: 1.5rem;
+	color: #323232;
+	letter-spacing: -0.036rem;
+	line-height: 1.6rem;
+	margin-bottom: 4.3rem;
+}
+.r-bottom {
+	font-family: "PingFangSC-Light";
+	font-size: 1.2rem;
+	color: #999;
+	letter-spacing: -0.029rem;
+	line-height: 1.2rem;
+}
+

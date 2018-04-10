@@ -1,0 +1,451 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<title>Document</title>
+	<style>
+		html, body {
+			font-size: 62.5%;
+		}
+		/*自己定义em的大小基于html和body的根节点*/
+		html, body, p, ul, h1, h2, h4 {
+			margin: 0;
+			padding: 0;
+		}
+		.clearfix::after {
+			display: block;
+			content: "";
+			clear: both;
+			height: 0;
+		}
+		.content {
+			padding: 0rem 1.5rem 3rem 1.5rem;
+		}
+		.discuss-title {
+			padding: 1.5rem;
+			font-family: "PingFangSC-Regular";
+			font-size: 1.5rem;
+			color: #666;
+			letter-spacing: -0.03rem;
+		}
+		.discuss-list {
+			margin-bottom: 6.1rem;
+		}
+		.discuss-item {
+			position: relative;
+			padding: 1.5rem 1.5rem 1.5rem 7rem;
+			border-top: 0.5px solid #e7e7e7;
+			border-bottom: 0.5px solid #e7e7e7;
+		}
+		.item-img {
+			position: absolute;
+			left: 1.5rem;
+			display: block;
+			width: 4rem;
+			height: 4rem;
+			border-radius: 100%;
+			background-image: url("./assets/cat.png");
+			background-size: cover;
+		}
+		.item-right {
+			width: 100%;
+		}
+		.fl {
+			float: left;
+		}
+		.fr {
+			float: right;
+		}
+		.speak {
+			margin-top: 0.7rem;
+			font-size: 1.5rem;
+			color: #323232;
+			letter-spacing: -0.036rem;
+			line-height: 1.6rem;
+			text-align: justify;
+		}
+		.username {
+			width: 42px;
+			height: 20px;
+			font-size: 1.4rem;
+			color: #666;
+			letter-spacing: -0.034px;
+			margin-right: 1rem;
+		}
+		.consule {
+			width: 8rem;
+			height: 1.6rem;
+			background: url("./assets/Group 17@2x.png");
+			background-size: cover;
+		}
+		.title {
+			width: 1.9rem;
+			height: 1.8rem;
+			background: url("./assets/titler.png");
+			background-size: cover;
+		}	
+		.time {
+			font-size: 1.2rem;
+			letter-spacing: 0.029rem;
+			color: #c2c2c2;
+		}
+		.comment {
+			background: #f8f8f8;
+			margin-top: 0.7rem;
+			font-size: 1.4rem;
+			color: #666;
+			padding: 1rem;
+			letter-spacing: -0.044rem;
+			line-height: 2rem;
+		}
+		.special {
+			display: inline-block;
+			color: #3f3f3f;
+		}
+		h1 {
+			font-family: "PingFangSC-Medium";
+			font-size: 2.3rem;
+			color: #323232;
+			letter-spacing: 0;
+			line-height: 3.72rem;
+			padding: 1.7rem 1.5rem 2.3rem 1.5rem;
+			text-align: justify;k
+		}
+		.present {
+			position: relative;
+			padding: 0 1.5rem 1.5rem 7rem;
+		}
+		.present-img {
+			position: absolute;
+			left: 1.5rem;
+			width: 4rem;
+			height: 4rem;
+			border-radius: 100%;
+			background-image: url("./assets/man-people.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.name {
+			font-family: "PingFangSC-Medium";
+			font-size: 1.5rem;
+			color: #323232;
+			letter-spacing: 0;
+		}
+		.profession {
+			font-family: "PingFangSC-Regular";
+			font-size: 1.5rem;
+			color: #999;
+			letter-spacing: -0.036rem;
+			margin-left: 0.8rem;
+		}
+		.attention {
+			width: 5.6rem;
+			height: 2.4rem;
+			background-image: url("./assets/Group 21@2x.png");
+			background-size: cover;
+			font-family: "PingFangSC-Light";
+			font-size: 1.4rem;
+			color: #39D167;
+			letter-spacing: -0.034rem;
+			line-height: 2.4rem;
+			text-align: center;
+		}
+		.data {
+			font-family: "PingFangSC-Regular";
+			font-size: 1.2rem;
+			color: #999;
+			letter-spacing: -0.029rem;
+			margin-top: 0.5rem;
+		}
+		.suggest {
+			font-family: "PingFangSC-Regular";
+			font-size: 1.5rem;
+			color: #666;
+			letter-spacing: -0.03rem;
+			line-height: 2.427rem;
+			padding-bottom: 1.5rem;
+			text-align: justify;	
+		}
+		.child {
+			padding-bottom: 1.5rem;
+		}
+		.child img {
+			width: 100%;
+		}
+		p {
+			padding-bottom: 1.6rem;
+			font-family: "PingFangSC-Regular";
+			font-size: 1.5rem;
+			color: #666666;
+			letter-spacing: -0.03rem;
+			line-height: 2.427rem;
+			text-align: justify;
+		}
+		h2 {
+			font-family: "PingFangSC-Medium";
+			font-size: 1.7rem;
+			color: #666;
+			letter-spacing: 0;
+			line-height: 2.427rem;
+			padding-bottom: 1.1rem;
+		}
+		h4 {
+			font-family: "PingFangSC-Regular";
+			font-size: 1.5rem;
+			color: #666;
+			letter-spacing: 0;
+			line-height: 2.427rem;
+			padding-bottom: 0.5rem;
+		}
+		.explan {
+			padding-bottom: 1.5rem;
+			font-size: 1.5rem;
+			color: #666;
+			letter-spacing: -0.03rem;
+			line-height: 2.427rem;
+			text-align: justify;
+		}
+		.read {
+			font-family: "PingFangSC-Regular";
+			font-size: 1.5rem;
+			color: #C2C2C2;
+			letter-spacing: -0.03rem;
+			line-height: 1.5rem;
+		}
+		.operation {
+			width: 93%;
+			padding: 0 3.5% 2rem 3.5%;
+		}
+		.praise {
+			height: 36px;
+			width: 27%;
+			margin-right: 6%;
+		}
+		.praise img {
+			width: 100%;
+			height: 100%;
+		}
+		.mind {
+			height: 36px;
+			width: 27%;
+			border: 1px solid #ff673c;
+			border-radius: 2rem;
+			font-family: "PingFangSC-Regular";
+			font-size: 1.4rem;
+			color: #FF673C;
+			letter-spacing: 0;
+			line-height: 3.6rem;
+			text-align: center;
+		}
+		.mind img {
+			width: 0.9rem;
+		}
+		.now {
+			height: 36px;
+			position: absolute;
+			right: 6%;
+			width: 27%;
+		}
+		.now img {
+			width: 100%;
+			height: 100%;
+		}
+		.statement {
+			background: #fafafa;
+			border-left: 5px solid #d8d8d8;
+			margin: 0 1.5rem 3.1rem 1.5rem;
+			padding: 2rem 1.1rem;
+			font-family: "PingFangSC-Regular";
+			font-size: 1.4rem;
+			color: #999;
+			letter-spacing: -0.028rem;
+			line-height: 2.127rem;
+		}
+		.statement span {
+			color: #39d167;
+		}
+		.cut {
+			border-top: 5px solid #f1f1f1;
+		}
+		.add-discuss {
+			background: #fbfbfb;
+			border: 1px solid #e7e7e7;
+			padding: 0.8rem 1.5rem 0.7rem 1.5rem;
+			text-align: center;
+		}
+		.add {
+			width: 82%;
+			height: 3.5rem;
+			background: #fff;
+			border: 1px solid #E7E7E7;
+			border-radius: 1px;
+			background-image: url("./assets/write.png");
+			background-repeat: no-repeat;
+			background-position: 10px center;
+			background-size: 1.4rem 1.5rem;
+			padding-left: 2.9rem;
+		}
+		.add-discuss span {
+			display: inline-block;
+			width: 3rem;
+			height: 3rem;
+			background-image: url("./assets/Group11@2x.png");
+			background-size: cover;
+		}
+		.cover {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.4);
+			z-index: 1111;
+			position: fixed;
+			display: none;
+		}
+		.box {
+			position: absolute;
+			top: 20rem;
+			left: 5.3rem;
+			right: 5.3rem;
+			padding: 1.8rem 1.6rem 1.3rem 1.5rem;
+			background: rgba(252,252,252,0.90);
+			/*background: rgba(255,255,255,0.50);*/
+			border-radius: 12px;
+		}
+		.box-text {
+			text-align: justify;
+			font-family: "PingFangSC-Regular";
+			font-size: 1.5rem;
+			color: #323232;
+			letter-spacing: -0.036rem;
+			line-height: 2.2rem;
+		}
+		.box-cut {
+			width: 100%;
+			height: 0.01rem;
+			background: rgba(77,77,77,0.78);
+			margin: 1.9rem 0rem 1.3rem 0rem;
+		}
+		.know {
+			display: block;
+			font-family: "PingFangSC-Regular";
+			font-size: 1.7rem;
+			color: #0076FF;
+			letter-spacing: -0.041rem;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="cover">
+		<div class="box">
+			<div class="box-text">
+				说明：部分医生文章来源或改编自互联网及其他平台，主要目的在于分享信息，让让更多人获取健康知识，版权规原作者所有，内容仅供读者参考，不希望被转载的媒体或个体可与我们联系。
+			</div>
+			<div class="box-cut"></div>
+			<button type="button" class="know">我知道了</button>
+		</div>
+	</div>
+	<h1>宝宝上火有这些误区&nbsp&nbsp&nbsp学会四招巧防治</h1>
+	<div class="present clearfix">
+		<span class="present-img fl"></span>
+		<div class="present-left fl clearfix">
+			<div class="clearfix">
+				<div class="name fl">吕雪莲</div>
+				<div class="profession fl">妇科 主治医师</div>
+			</div>
+			<div class="data">
+				2017-05-16 16:4:05
+			</div>
+		</div>
+		<div class="present-right fr">
+			<div class="attention fr">+&nbsp关注</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="suggest">
+			宝宝早上起来就喝白开水，这样可以补充晚上确实的水分，清理肠道，排除废物，唤醒消化系统及整体机能的恢复，清理口腔等。
+		</div>
+		<div class="child">
+			<img src="./assets/child.png"/>
+		</div>
+		<p>
+			宝宝上火是一种常见的疾病。那么对于家长朋友来说，对于宝宝上火有哪些认识误区呢？
+		</p>
+		<h2>宝宝上火有哪些认识误区</h2>
+		<h4>1.拖延用药危害大</h4>
+		<div class="explan">
+			很多妈妈认为，宝宝上火很常见，并不要紧，身体自行调节一下，就自然会好的。其实这种想法是错误的。还有一些妈妈认为：“是药三分毒”，对药敬而远之，不能宝宝一上火就吃药。<br/>许多宝宝就是延误了对”上火“症状治疗，导致了病情的恶化。专家指出，父母这种不重视治疗,拖延用药的做法，很容易导致宝宝抵抗力的下降，”上火“是体内潜伏的病因，容易造成体内炎症，容易引发感冒,扁桃体炎,腮腺炎等症状，宝宝”上火“问题不能掉以轻心，需要得到即使的治疗。
+		</div>
+		<h4>2.滥用成人药物伤害大</h4>
+		<div class="explan">
+			在生活中，上火是人们常见的一种病症之一。不少家长就认为，宝宝上火和大人一样，喝些凉茶就可以好了，或者将成人吃的上火药物减量，给到宝宝吃。这些方法其实都是有损宝宝健康的做法，对宝宝的身体健康y影响很大。<br/>宝宝处于成长发育的特殊时期，各种器官，免疫系统发育不全，属于低免疫人群，成人药品中的部分成分不适合儿童，滥用成人药物会伤害儿童的肠胃，肝肾，儿童必须慎用。
+		</div>
+		<div class="read">2632阅读</div>
+	</div>
+	<div class="operation clearfix">
+		<div class="praise fl">
+			<img src="./assets/Group19@2x.png" />
+		</div>
+		<div class="mind fl">
+			<img src="./assets/care.png" />&nbsp&nbsp送心意
+		</div>
+		<div class="now fl">
+			<img src="./assets/Group 14@2x.png" />
+		</div>
+	</div>
+	<div class="statement">
+		声明：任何有关疾病的建议都不能代替职业医师建议。版权问题请点击查看
+		<span>说明</span>
+	</div>
+	<div class="cut"></div>
+	<div class="discuss-title">
+		评论&nbsp&nbsp736
+	</div>
+	<div class="discuss-list">
+		<div class="discuss-item clearfix">
+			<span class="item-img fl"></span>
+			<div class="item-right fl">
+				<div class="clearfix">
+ 					<div class="username fl">吕雪莲</div>
+					<div class="consule fl"></div>
+					<div class="title fr"></div> 
+  				</div>
+				<div class="time">08-23</div>
+				<div class="speak">其实对于糖尿病大家都觉得很恐怖，根本不用怕，得了之后就等着医生治疗
+				</div>
+			</div>
+		</div>
+		<div class="discuss-item clearfix">
+			<span class="item-img fl"></span>
+			<div class="item-right fl">
+				<div class="clearfix">
+ 					<div class="username fl">吕雪莲</div>
+					<div class="consule fl"></div>
+					<div class="title fr"></div> 
+  				</div>
+				<div class="time">08-23</div>
+				<div class="speak">其实对于糖尿病大家都觉得很恐怖，根本不用怕，得了之后就等着医生治疗
+				</div>
+				<div class="comment">
+					<span class="special">张丹</span>：脸上经常起痘痘，而且十几年也没有治疗好，特别的痛痒有什么办法可以治疗嘛
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="add-discuss clearfix">
+		<input type="text" class="add fl" placeholder="添加评论"/>
+		<span class="fr"></span>
+	</div>
+	<script>
+		$(function(){
+			$(".attention").click(function(){
+				$(".cover").fadeIn();
+			});
+			$(".know").click(function(){
+				$(".cover").fadeOut();
+			});
+		})
+	</script>
+</body>
+</html>

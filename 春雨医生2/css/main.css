@@ -1,0 +1,263 @@
+html, body, ul, p {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	font-family: "PingFangSC-Light";
+	font-size: 62.5%;
+	background-color: #f9f9f9;
+}
+ ul, li {
+ 	list-style: none;
+ }
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.header {
+	font-size: 1.5rem;
+	color: #323232;
+}
+.count {
+	background: #f9f9f9;
+	box-shadow: 0 0.1rem 0 0 rgba(241,241,241,0.5);
+	padding: 1.6rem 0 1.3rem 2.2rem;
+}
+.count .title {
+	/*font-family: "PingFangSC-Light";*/
+	/*font-size: 1.5rem;*/
+	/*color: #323232;*/
+	letter-spacing: -0.036rem;
+}
+.count-result, .skill, .skill-list {
+	background-color: #fff;
+}
+.count-result {
+	padding: 1.7rem 0 1.7rem 1.5rem;
+}
+.dian {
+	float: left;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: #1B91E0;
+	border-radius: 100%;
+	margin-right: 0.7rem;
+	display: inline-block;
+	margin-top: 0.3rem;
+}
+.res-list .title {
+	float: left;
+	opacity: 0.8;
+	letter-spacing: 0;
+}
+.res-list:nth-of-type(1) {
+	margin-bottom: 0.4rem;
+}
+.skill {
+	padding: 1rem 0 1rem 1.5rem;
+	color: #666;
+	font-size: 1.4rem;
+	opacity: 0.8;
+	letter-spacing: 0;
+}
+.skill-list {
+	/*background*/
+	/*border: 1px solid #f9f9f9;*/
+	margin-top: 0.05rem;
+	padding: 0 1.5rem;
+	margin-bottom: 1rem;
+}
+.skill-list ul {
+	width: 100%;
+	padding: 1rem 0;
+}
+.skill-list ul li {
+	float: left;
+	width: 24.7%;
+	/*padding: 1rem 0;*/
+	/*height: 0.4rem;*/
+	/*background: red;*/
+	text-align: center;
+	/*border-bottom: 1px solid #f9f9f9;*/
+	border-right: 1px solid #f9f9f9;
+	margin: 1rem 0;
+}
+.skill-list ul li:nth-of-type(4) {
+	border-right: 0;
+}
+/*.skill-list ul li:nth-of-type(1) {
+	border-bottom: 1px solid #f9f9f9;
+}*/
+.skill-list .num {
+	font-size: 1.3rem;
+	color: #1B91E0;
+	letter-spacing: -0.043rem;
+	padding: 0.2rem 0;
+}
+.skill-list .title {
+	font-size: 1.2rem;
+	color: #999;
+	letter-spacing: -0.029rem;
+}
+.cases {
+	background-color: #fff;
+}
+.case {
+	padding: 1.3rem 1.5rem;
+	/*background-color: #fff;*/
+}
+.case-box {
+	width: 100%;
+	height: 2rem;
+	text-align: center;
+}
+.case-box-item {
+	/*width: 50%;*/
+	width: 49.3%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #1B91E0;
+	letter-spacing: -0.036rem;
+	/*padding-top: 0.2rem;*/
+	/*height: 2rem;*/
+	border: 1px solid #1B91E0;
+	padding: 0.3rem 0;
+	border-radius: 0.2rem;
+}
+.case-box .change {
+	color: #fff;
+	background-color: #1b91e0;
+}
+.case-list {
+	display: none;
+	background-color: #fff;
+	border-top: 1px solid #f9f9f9;
+	border-bottom: 1px solid #f9f9f9;
+	/*margin-bottom: 1rem;*/
+}
+.case-list-item {
+	padding: 1.6rem 0 1.1rem 1.5rem;
+}
+.case-list-item  p {
+	margin-bottom: 0.7rem;
+	font-size: 1.5rem;
+	color: #999;
+	letter-spacing: 0;
+}
+.case-list-item .title {
+	font-size: 1.7rem;
+	color: #323232;
+	letter-spacing: 0;
+}
+.case-list-item .title span {
+	color: #1B91E0;
+}
+.cut {
+	width: 100%;
+	height: 0.1rem;
+	background-color: #f9f9f9;
+}
+.footer {
+	background-color: #fff;
+	padding: 2.4rem 0 2.1rem 1.5rem;
+	margin-top: 1rem;
+}
+.footer span {
+	float: left;
+	margin-right: 2.5rem;
+	font-size: 1.4rem;
+	color: #666;
+	text-align: center;
+	visibility: visible;
+}
+.footer span img {
+	float: left;
+	width: 1.7rem;
+	height: 1.65rem;
+	padding-right: 0.4rem;
+}
+.footer .help {
+	color: #999;
+	letter-spacing: 0;
+}
+.box {
+	border-top: 1px solid #f9f9f9;
+	border-bottom: 1px solid #f9f9f9;
+}
+.tags-box {
+	border-bottom: 1px solid #f9f9f9;
+}
+.similarity-case-list {
+	padding: 1.6rem 0 0 1.5rem;
+}
+.similarity-case-list p {
+	margin-bottom: 1rem;
+}
+.question, .answer {
+	font-size: 1.7rem;
+	color: #999;
+	letter-spacing: 0;
+}
+.question .title {
+	color: #141414;
+	line-height: 2.4rem;
+}
+.answer .label-list {
+	padding: 0.2rem 0.4rem;
+	background: #EDF6FF;
+	border: 1px solid #1B91E0;
+	border-radius: 0.2rem;
+	margin-left: 0.5rem;
+	font-size: 1.1rem;
+	color: #1B91E0;
+	letter-spacing: 0;
+}
+.similarity-case-list .data {
+	font-size: 1rem;
+	color: #999;
+	letter-spacing: 0;
+	text-align: right;
+	margin-right: 1.4rem;
+}
+.doctor-introduced {
+	position: relative;
+	padding: 1rem 0 2.1rem 6.2rem;
+}
+.doctor-img {
+	position: absolute;
+	left: 1.6rem;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 100%;
+}
+.doctor-img img {
+	width: 4rem;
+	height: 4rem;
+}
+.introduced {
+	position: relative;
+	width: 100%;
+	height: 4rem;
+}
+.introduced p:nth-of-type(1) {
+	margin-bottom: 0.1rem;
+}
+.introduced p {
+	font-size: 1.2rem;
+	letter-spacing: 0;
+}
+.introduced .doctor-name {
+	color: #323232;
+}
+.section {
+	margin-left: 0.9rem;
+	/*color: #999;*/
+}
+.introduced p:nth-of-type(2) {
+	position: absolute;
+	bottom: 0;
+}
